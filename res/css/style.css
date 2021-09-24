@@ -1,0 +1,80 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    background-color: #3A81CA;/*#f7f7f7*/
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#MainBlock {
+    display: flex;
+    width: 60%;
+    height: 98%;
+    align-self: center;
+    background-color: #ffffff;
+    text-align: left;
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-bottom: 10%;
+    position: fixed;
+    top: 1%;
+    bottom: 1%;
+}
+
+.StatusBlock {
+    display: fixed;
+    width: 100%;
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-bottom: auto;
+    margin-top: 10px;
+    background-color: white;
+    -moz-box-shadow:    3px 3px 5px 6px #ccc;
+    -webkit-box-shadow: 3px 3px 5px 6px #ccc;
+    box-shadow:         0px 3px 5px 6px #ccc;
+}
+.StatusHead {
+    display: contents;
+    margin-left: 5px;
+}
+.userImage {
+  /*float: left;*/
+  height: 35px;
+  width: 40px;
+  margin-top: 5px;
+  margin-left: 5px;
+  margin-bottom: 5px;
+}
+.date {
+  text-align: right;
+  margin-top: 5px;
+  margin-left: 5px;
+  margin-right: 5px;
+  margin-bottom: 5px;
+}
+
+.StatusImage {
+  margin: auto;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+.contentImage {
+  display: block;
+  max-width: 100%;
+  max-height: 100%;
+  padding: 0;
+  margin: auto;
+  margin-top: 45px;
+  margin-bottom: 5px;
+}
+.contentText {
+  margin-left: 8px;
+  font-weight: bold;
+}
+
+.likeImage {
+  float: left;
+  height: 40px;
+  width: 40px;
+  margin-left: 8px;
+  margin-bottom: 8px;
+}
