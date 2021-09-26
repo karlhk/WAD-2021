@@ -1,22 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<link rel="stylesheet" href="res/css/style.css">
-	<title>Login Page</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="res/css/style.css">
+    <title>Login Page</title>
 </head>
-<body>
-    <div class="login">
+<body id="LoginParent">
+<div class="login" id="LoginScreen">
     <form id="login" method="get" action="index.html">
-        <div class="flex-container", id ="TopOfBox">
+        <div class="center">
             <img src="res/images/post it notes.png" alt="Post it notes" class="postitImage">
             <p>Welcome to postIt!</p>
+            <a href="">Create an Account</a>
+            <p>Or</p>
+            <p>Please Log In</p>
         </div>
         <input type="text" id="Email" placeholder="Email" name="Email" required>
         <input type="password" id="Pass" placeholder="Password" name="Pass" required>
         <button type="submit" name="Log" id="Log" value="Log In">Login</button>
         <a href="#" class="Forgot">Forgot Password?</a>
     </form>
-    </div>
+</div>
 </body>
 </html>
