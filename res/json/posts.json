@@ -1,0 +1,16 @@
+[
+  {
+    "userImage": "res/images/user.png",
+    "authorName": "John Doe",
+    "date": "Sept 25, 2021",
+    "contentImage": "res/images/SkyImage.png",
+    "contentText": "I think it's going to rain"
+  },
+  {
+    "userImage": "res/images/user.png",
+    "authorName": "Jane Doe",
+    "date": "Oct 22, 2021",
+    "contentImage": "res/images/Batman.png",
+    "contentText": "Felt cute might delete later"
+  }
+]
