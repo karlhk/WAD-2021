@@ -2,8 +2,10 @@
   "ExpandedNodes": [
     "",
     "\\res",
-    "\\res\\css"
+    "\\res\\css",
+    "\\res\\js",
+    "\\res\\json"
   ],
-  "SelectedNode": "\\res\\css\\style.css",
+  "SelectedNode": "\\res\\json\\posts.json",
   "PreviewInSolutionExplorer": false
 }

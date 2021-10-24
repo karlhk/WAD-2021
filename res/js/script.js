@@ -46,9 +46,16 @@ function addPostsToMainBlock(blockData) {
         newPost.appendChild(statusImgDiv);
 
         const contentImg = document.createElement("img");
-        contentImg.src = blockData[i].contentImage;
+        
+        if(blockData[i].hasOwnProperty('contentImage')){
+            contentImg.src = blockData[i].contentImage;
+        } else
+        {
+            contentImg.src = "";
+        }
         contentImg.className = "contentImage";
         statusImgDiv.appendChild(contentImg);
+        
 
         // TAIL CONTENT
         const statusTailDiv = document.createElement("div");
@@ -86,9 +93,9 @@ document.addEventListener("DOMContentLoaded", function(){
         }
     };
 
-    //request.open("GET", "https://api.jsonbin.io/b/6172caca4a82881d6c63fe16/2", true);
-    //request.setRequestHeader("secret-key", "$2b$10$4I6hCPOQ93N4erAPeTYE4uILA4bxVzWqRa1l1R/V34nRSj8gjzbcq");
-    request.open("GET", "res/json/posts.json", true)
+    request.open("GET", "https://api.jsonbin.io/b/6172caca4a82881d6c63fe16/2", true);
+    request.setRequestHeader("secret-key", "$2b$10$4I6hCPOQ93N4erAPeTYE4uILA4bxVzWqRa1l1R/V34nRSj8gjzbcq");
+    //request.open("GET", "res/json/posts.json", true)
     request.send();
 
 });
