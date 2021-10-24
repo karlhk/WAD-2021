@@ -2,15 +2,54 @@
   {
     "userImage": "res/images/user.png",
     "authorName": "John Doe",
-    "date": "Sept 25, 2021",
+    "date": "Sept 24, 2021 19:22",
     "contentImage": "res/images/SkyImage.png",
     "contentText": "I think it's going to rain"
   },
   {
-    "userImage": "res/images/user.png",
-    "authorName": "Jane Doe",
-    "date": "Oct 22, 2021",
-    "contentImage": "res/images/Batman.png",
-    "contentText": "Felt cute might delete later"
+    "authorName": "Anonymous",
+    "date": "Sept 25, 2021 11:58",
+    "contentText": "Which weighs more, a pound of feathers or a pound of steel?"
+  },
+  {
+    "authorName": "Limmy",
+    "date": "Sept 25, 2021 12:00",
+    "contentText": "Steel is heavier than feathers"
+  },
+  {
+    "authorName": "Anonymous",
+    "date": "Sept 25, 2021 13:40",
+    "contentText": "No, lol, they're both the same weight"
+  },
+  {
+    "authorName": "Limmy",
+    "date": "Sept 25, 2021 17:05",
+    "contentText": "But steel is heavier than feathers"
+  },
+  {
+    "authorName": "Anonymous",
+    "date": "Sept 25 , 2021 22:41",
+    "contentText": "Yeahm but they are both a pound."
+  },
+  {
+    "authorName": "Anonymous",
+    "date": "Sept 25, 2021 23:59",
+    "contentText": "This guy doesn't get it XDD"
+  },
+  {
+    "authorName": "R. Tree",
+    "date": "Sept 30, 2021 12:05",
+    "contentText": "I wonder if this guy ever figured it out."
+  },
+  {
+    "authorName": "Joe Dohn",
+    "date": "Sept 30, 2021 23:12",
+    "contentText": "He was probably messing around anyway."
+  },
+  
+  {
+    "authorName": "LiMmY",
+    "date": "Oct 2, 2021 14:23",
+    "contentText": "FeaTHeR a sTeeL, pOUnD HeaVY."
   }
 ]
