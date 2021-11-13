@@ -3,23 +3,60 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="res/css/style.css">
+    <script type="text/javascript" src="res/js/script.js"></script>
     <title>Login Page</title>
 </head>
 <body id="LoginParent">
-<div class="login" id="LoginScreen">
-    <form id="login" method="get" action="index.html">
-        <div class="center">
-            <img src="res/images/post it notes.png" alt="Post it notes" class="postitImage">
-            <p>Welcome to postIt!</p>
-            <a href="">Create an Account</a>
-            <p>Or</p>
-            <p>Please Log In</p>
+    <header>
+        <div class="flex-container" id="TitleBar">
+            <!-- <img src="res/images/folder.png" alt="Folder Image" class="websiteImage"> -->
+            <div class="dropdown">
+                <button onclick="menuDropdownFunction()" class="dropbtn2"></button>
+                <div id="menuDropdown" class="dropdown-content">
+                <a href="index.html">Home</a>
+                <a href="contact.html">Contacts</a>
+                <a href="login.html">Log out</a>
+                </div>
+            </div>
+            <div class="SearchBar">
+                <input type="text" id="SearchBarInput" name="fname">
+
+                <button class="btn Search">Search</button>
+            </div>
+            <div class="dropdown">
+                <button onclick="userDropdownFunction()" class="dropbtn"></button>
+                <div id="userDropdown" class="dropdown-content">
+                <p class="userName"> John Doe </p>
+                <p>john.doe@example.com</p>
+                <a href="#">Log out</a>
+                </div>
+            </div>
+            <!-- <img src="res/images/user.png" alt="User Image" class="userImage2"> -->
         </div>
-        <input type="text" id="Email" placeholder="Email" name="Email" required>
-        <input type="password" id="Pass" placeholder="Password" name="Pass" required>
-        <button type="submit" name="Log" id="Log" value="Log In">Login</button>
-        <a href="#" class="Forgot">Forgot Password?</a>
-    </form>
-</div>
+    </header>
+    <div class="login" id="LoginScreen">
+        <form id="login" method="get" action="index.html">
+            <div class="center">
+                <img src="res/images/post it notes.png" alt="Post it notes" class="postitImage">
+                <p>Welcome to postIt!</p>
+                <a href="">Create an Account</a>
+                <p>Or</p>
+                <p>Please Log In</p>
+            </div>
+            <input type="text" id="Email" placeholder="Email" name="Email" required>
+            <input type="password" id="Pass" placeholder="Password" name="Pass" required>
+            <button type="submit" name="Log" id="Log" value="Log In">Login</button>
+            <a href="#" class="Forgot">Forgot Password?</a>
+        </form>
+    </div>
+    <div class="flex-container" id="ContactBlock">
+    </div>
+    <footer>
+      <p>Dev: Kalmer Kaurson</p>
+      <p><a href="contact.html">kalmerkaurson@gmail.com</a></p>
+      <p>tel: +372110110</p>
+      <p>COPYRIGHT &#9400; 2021 postIt INC.</p>
+      <p>ALL RIGHTS RESERVED.</p>
+    </footer>
 </body>
 </html>
