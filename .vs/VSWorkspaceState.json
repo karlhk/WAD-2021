@@ -1,11 +1,16 @@
 {
   "ExpandedNodes": [
     "",
-    "\\res",
+    "\\public",
+    "\\public\\css",
+    "\\public\\res",
+    "\\public\\res\\js",
     "\\res\\css",
     "\\res\\js",
-    "\\res\\json"
+    "\\res\\json",
+    "\\views",
+    "\\views\\partials"
   ],
-  "SelectedNode": "\\res\\json\\posts.json",
+  "SelectedNode": "\\public\\res\\js\\script.js",
   "PreviewInSolutionExplorer": false
 }

@@ -1,0 +1,42 @@
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="/css/style.css">
+	<script type="text/javascript" src="/js/script.js"></script>
+	<title>Posts</title>
+</head>
+<body>
+	<%- include('./partials/navbar.ejs') %>
+		<div class="flex-container" id="MainBlock">
+			<% if (posts.length > 0) { %>
+				<% posts.forEach(post => { %>
+						<div class ="StatusBlock">
+							<a class="singlepost" href="/singlepost/<%= post.id %>">
+								<div class="flex-container", id ="StatusHead">
+									<h3 class="statusTitle">
+										<%= post.title %>
+									</h3>
+								</div>
+								<div class ="StatusBody">
+									<p class="contentText">
+										<%= post.body %>
+									</p>
+								</div>
+							</a>
+							<div class="flex-container", id ="StatusTail">
+								<input type="image" src="/images/like.png" onclick="incrementValue('likeCount<%= post.id %>','likeImage<%= post.id %>')" value="Increment Value" class="likeImage" id="likeImage<%= post.id %>"/>
+								<p id="likeCount<%= post.id %>">
+									<%= post.likes %>
+								</p>
+							</div>
+						</div>
+					<% }) %>
+						<% } else { %>
+							<p>You did not post anything...</p>
+							<% } %>
+		</div>
+		<%- include('./partials/footer.ejs') %>
+</body>
+</html>

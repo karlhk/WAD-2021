@@ -1,0 +1,46 @@
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="/css/style.css">
+	<script type="text/javascript" src="/js/script.js"></script>
+	<title>Single Post</title>
+</head>
+<body>
+	<%- include('./partials/navbar.ejs') %>
+		<div class="flex-container" id="MainBlock">
+			<div class ="StatusBlock">
+				<div class="singlepost">
+					<div class="flex-container", id ="StatusHead">
+						<h3 class="statusTitle">
+							<%= posts.title %>
+						</h3>
+					</div>
+					<div class ="StatusBody">
+						<p class="contentText">
+							<%= posts.body %>
+						</p>
+					</div>
+					<div class="flex-container", id ="StatusTail">
+						<input type="image" src="/images/like.png" onclick="incrementValue('likeCount"<%= posts.id %>','likeImage<%= posts.id %>')" value="Increment Value" class="likeImage" id="likeImage<%= posts.id %>"/>
+						<p id="likeCount<%= posts.id %>">
+							<%= posts.likes %>
+						</p>
+					</div>
+				</div>
+			</div>
+			<button class="delete" data-del="<%= posts.id %>">Delete</button>
+		</div>
+		<script>
+			const delreq = document.querySelector('button.delete');
+			delreq.addEventListener('click', (e) => {
+				const endpoint = `/posts/${delreq.dataset.del}`;
+				fetch(endpoint, {
+					method: 'DELETE',
+					}).then(window.location.href = '/posts')
+			});
+		</script>
+		<%- include('./partials/footer.ejs') %>
+</body>
+</html>

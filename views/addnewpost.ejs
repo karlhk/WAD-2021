@@ -1,0 +1,41 @@
+<html lang="en">
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=>, initial-scale=1.0">
+	<link rel="stylesheet" href="/css/style.css">
+	<script type="text/javascript" src="/js/script.js"></script>
+	<title> Create a post</title>
+<body>
+	<%- include('./partials/navbar.ejs') %>
+		<br>
+		<div class="create-post">
+			
+			<form action="/posts" method="POST">
+				<label for="title">Post title:</label>
+				<input type="text" id="title" name="title" required><br><br>
+				<label for="body">Post body:</label>
+				<input type="text" id="body" name="body" required><br><br>
+				<label for="likes">Likes count:</label>
+				<input type="number" id="likes" name="likes"></textarea><br><br>
+				<button>Submit</button>
+			</form>
+			<!--
+			<form action="/posts" method="POST">
+				<div class="flex-container", id ="newPost">
+					<div class="flex-container", id ="newPostLabels">
+						<label for="title">Post title:</label>
+						<label for="body">Post body:</label>
+						<label for="likes">Likes count:</label>
+					</div>
+					<div class="flex-container", id ="newPostInputs">
+						<input type="text" id="title" name="title" required=""><br><br>
+						<input type="text" id="body" name="body" required=""><br><br>
+						<input type="number" id="likes" name="likes"></textarea><br><br>
+					</div>
+					<button>Submit</button>
+				</div>
+			</form>-->
+		</div>
+		<%- include('./partials/footer.ejs') %>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!-- <nav>
+ <a href="/">Home </a> |
+ <a href="/posts">Posts page</a> |
+ <a href="/contactus">Contact us</a>|
+ <a href="/addnewpost">New post</a>
+</nav> -->
+
+<nav>
+	<div class="flex-container" id="TitleBar">
+		<div class="dropdown2">
+			<button onclick="menuDropdownFunction()" class="dropbtn2"></button>
+			<div id="menuDropdown" class="dropdown-content2">
+				<a href="/posts">Posts</a>
+				<a href="/contactus">Contacts</a>
+				<a href="/addnewpost">New Post</a>
+			</div>
+		</div>
+		<div class="SearchBar">
+			<input type="text" id="SearchBarInput" name="fname">
+
+				<button class="btn Search">Search</button>
+			</div>
+		<div class="dropdown">
+			<button onclick="userDropdownFunction()" class="dropbtn"></button>
+			<div id="userDropdown" class="dropdown-content">
+				<p class="userName"> John Doe </p>
+				<p>john.doe@example.com</p>
+				<a href="#">Log out</a>
+			</div>
+		</div>
+	</div>
+</nav>
