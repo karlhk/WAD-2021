@@ -32,6 +32,15 @@ button:hover {
     background-color: #3A81CA;
 }
 
+
+.StatusTitle:hover {
+    background-color: #eeeeee;
+}
+
+.StatusBody:hover {
+    background-color: #eeeeee;
+}
+
 #MainBlock {
     /*overflow: scroll;*/
     /*position: absolute;*/
@@ -271,6 +280,14 @@ button:hover {
     color: black;
     padding: 10px;
     margin-left: 8px;
+    margin-right: 8px;
+    font-weight: bold;
+}
+
+.statusBody {
+    color: black;
+    margin-left: 4px;
+    margin-right: 4px;
     font-weight: bold;
 }
 
