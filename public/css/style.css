@@ -286,6 +286,7 @@ button:hover {
 
 .statusBody {
     color: black;
+    overflow-wrap: break-word;
     margin-left: 4px;
     margin-right: 4px;
     font-weight: bold;
@@ -293,6 +294,7 @@ button:hover {
 
 #statusTail {
     color: black;
+    overflow-wrap: break-word;
     margin-left: 14px;
     font-weight: bold;
 }
